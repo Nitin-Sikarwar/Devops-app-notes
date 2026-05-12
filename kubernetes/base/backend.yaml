@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: YOUR_DOCKERHUB_USERNAME/devops-notes-backend:latest
+          image: nitinsikarwar/devops-notes-backend:latest
           ports:
             - containerPort: 5000
           envFrom:

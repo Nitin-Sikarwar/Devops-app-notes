@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: YOUR_DOCKERHUB_USERNAME/devops-notes-frontend:latest
+          image: nitinsikarwar/devops-notes-frontend:latest
           ports:
             - containerPort: 80
           resources:
