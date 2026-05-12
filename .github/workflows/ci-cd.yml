@@ -139,8 +139,8 @@ jobs:
   #     - name: Update image tags
   #       run: |
   #         TAG=${{ needs.build-and-push.outputs.image-tag }}
-  #         sed -i "s|nitinsikarwar/devops-notes-backend:latest|${{ secrets.DOCKERHUB_USERNAME }}/devops-notes-backend:${TAG}|g" kubernetes/base/backend.yaml
-  #         sed -i "s|nitinsikarwar/devops-notes-frontend:latest|${{ secrets.DOCKERHUB_USERNAME }}/devops-notes-frontend:${TAG}|g" kubernetes/base/frontend.yaml
+  #         sed -i "s|dock0ff/devops-notes-backend:latest|${{ secrets.DOCKERHUB_USERNAME }}/devops-notes-backend:${TAG}|g" kubernetes/base/backend.yaml
+  #         sed -i "s|dock0ff/devops-notes-frontend:latest|${{ secrets.DOCKERHUB_USERNAME }}/devops-notes-frontend:${TAG}|g" kubernetes/base/frontend.yaml
   #     - name: Deploy
   #       run: kubectl apply -k kubernetes/base/
   #     - name: Wait for rollout

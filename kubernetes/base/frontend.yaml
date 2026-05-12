@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: nitinsikarwar/devops-notes-frontend:latest
+          image: dock0ff/devops-notes-frontend:latest
           ports:
             - containerPort: 80
           resources:
